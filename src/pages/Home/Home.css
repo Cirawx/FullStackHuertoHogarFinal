@@ -1,0 +1,113 @@
+.hero-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f5e9 100%);
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: var(--color-accent-brown);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  min-height: 320px; /* ajusta según necesites */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Opcional: versión responsiva para pantallas muy pequeñas */
+@media (max-width: 767.98px) {
+  .hero-image {
+    min-height: 220px;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+  }
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  color: var(--color-accent-brown);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  font-size: 3rem;
+  color: var(--color-accent-green);
+}
+
+.feature-box {
+  padding: 2rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--color-accent-green);
+}
+
+.feature-box h4 {
+  color: var(--color-accent-brown);
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, var(--color-accent-green), #3da968);
+  color: white;
+}
+
+.cta-section h2 {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.cta-section .lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}

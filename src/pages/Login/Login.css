@@ -1,0 +1,16 @@
+.login-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.login-card {
+  border: none;
+  border-radius: 15px;
+}
+
+.login-card h2 {
+  color: var(--color-accent-brown);
+  font-family: "Playfair Display", serif;
+}
